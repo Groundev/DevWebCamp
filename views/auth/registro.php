@@ -30,7 +30,7 @@
         <input type="submit" class="formulario__submit" value="Iniciar Sesión">
     </form>
     <div class="acciones">
-        <a href="/login" class="acciones__enlace">¿Ya tiens cuenta? Inicia Sesión</a>
+        <a href="/login" class="acciones__enlace">¿Ya tienes cuenta? Inicia Sesión</a>
         <a href="/olvide" class="acciones__enlace">¿Olvidaste tu Contraseña?</a>
     </div>
 
