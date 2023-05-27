@@ -62,7 +62,8 @@ class PonentesController {
         $router->render('admin/ponentes/crear', [
             'titulo' => 'Registrar Ponentes',
             'alertas' => $alertas,
-            'ponente' => $ponente
+            'ponente' => $ponente,
+            'redes' => json_decode($ponente->redes)
         ]);
     }
     public static function editar(Router $router){
@@ -80,15 +81,16 @@ class PonentesController {
         if(!$ponente){
             header('Location: /admin/ponentes');
         }
-        // Variabel Temporal
+
+        // Variable Temporal
         $ponente->imagen_actual = $ponente->imagen;
 
-        
 
         $router->render('admin/ponentes/editar', [
             'titulo' => 'Actualizar Ponentes',
             'alertas' => $alertas,
-            'ponente' => $ponente
+            'ponente' => $ponente,
+            'redes' => json_decode($ponente->redes)
         ]);
     }
 }
