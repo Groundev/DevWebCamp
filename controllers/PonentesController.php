@@ -80,12 +80,15 @@ class PonentesController {
         if(!$ponente){
             header('Location: /admin/ponentes');
         }
+        // Variabel Temporal
+        $ponente->imagen_actual = $ponente->imagen;
+
         
 
         $router->render('admin/ponentes/editar', [
             'titulo' => 'Actualizar Ponentes',
             'alertas' => $alertas,
-            'ponente' => $ponente ?? null
+            'ponente' => $ponente
         ]);
     }
 }
