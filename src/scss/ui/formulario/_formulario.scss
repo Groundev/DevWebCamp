@@ -60,8 +60,13 @@
         }
     }
 
+    &__radio{
+        display: flex;
+        gap: 2rem;
+    }
+
     &__texto{
-margin-top: 3rem;
+        margin-top: 3rem;
     }
     &__imagen{
         max-width: 20rem
