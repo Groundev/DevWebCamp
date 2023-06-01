@@ -13,4 +13,14 @@
         placeholder="Descripción Ponente" rows="6" value="<?php echo $ponente->descripcion ?? '' ;?>" ></textarea>
     </div>
 
+    <div class="formulario__campo">
+        <label for="categoria" class="formulario__label">Tipo de Evento</label>
+        <select name="categoria_id" id="categoria" class="formulario__select">
+            <option value="">Seleccionar</option>
+            <?php foreach($categorias as $categoria) { ?>
+                <option value="<?php echo $categoria->id;?>"><?php echo $categoria->nombre;?></option>
+            <?php } ?>
+        </select>
+    </div>
+
 </fieldset>
